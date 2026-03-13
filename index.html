@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador de CEP Estelar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <h1>Busca CEP <span class="sparkle">✨</span></h1>
+        
+        <div class="form-group">
+            <div class="row">
+                <select id="tipoVia">
+                    <option value="Rua">Rua</option>
+                    <option value="Avenida">Avenida</option>
+                    <option value="Praça">Praça</option>
+                    <option value="Alameda">Alameda</option>
+                </select>
+                <input type="text" id="numero" placeholder="Nº" style="width: 20%;">
+            </div>
+
+            <input type="text" id="rua" placeholder="Nome do Logradouro (ex: Sete de Setembro)">
+            <input type="text" id="cidade" placeholder="Cidade">
+            <input type="text" id="uf" placeholder="UF" maxlength="2">
+            
+            <button onclick="buscarCEP()">Buscar CEP</button>
+        </div>
+
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
